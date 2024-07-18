@@ -4,7 +4,7 @@ import { Entypo } from "@expo/vector-icons";
 const Header = () => {
   return (
     <>
-      <View className="flex h-16 w-full flex-row items-center justify-between px-5 pb-0">
+      <View className="flex h-16 w-full flex-row items-center justify-between">
         <Pressable
           onPress={() => {}}
           className="flex flex-row items-center justify-center gap-2"
