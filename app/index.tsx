@@ -1,4 +1,4 @@
-import { Alert, Image, ScrollView, StyleSheet, View } from "react-native";
+import { Alert, ScrollView, StyleSheet, View } from "react-native";
 
 import Constants from "expo-constants";
 import Header from "./components/Header";
