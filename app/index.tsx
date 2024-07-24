@@ -23,7 +23,7 @@ export default function Index() {
         setCategories(response.data.categories);
       } catch (error) {
         if (isAxiosError(error)) {
-          return Alert.alert("Error", error.response?.data);
+          return Alert.alert("Error", error.message);
         }
       }
     };
