@@ -1,5 +1,6 @@
 import axios from "axios";
+import { EXPO_REACT_APP_BASE_URL } from "@env";
 
 export const api = axios.create({
-  baseURL: "http://192.168.90.209:8081",
+  baseURL: EXPO_REACT_APP_BASE_URL,
 });
