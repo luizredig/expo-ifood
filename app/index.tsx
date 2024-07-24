@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { api } from "./server/api";
 import { isAxiosError } from "axios";
 import CategoryItem from "./components/CategoryItem";
+import Banner from "./components/Banner";
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -57,6 +58,13 @@ export default function Index() {
             ))}
         </View>
       </ScrollView>
+
+      <View className="h-fit w-full rounded-xl px-5 pb-6">
+        <Banner
+          source={require("../assets/images/first-banner.png")}
+          className="h-48 w-full rounded-xl"
+        />
+      </View>
     </ScrollView>
   );
 }
