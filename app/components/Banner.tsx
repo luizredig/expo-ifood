@@ -1,17 +1,14 @@
-import { Image, ImageSourcePropType, View } from "react-native";
+import { Image, ImageSourcePropType } from "react-native";
 
 interface BannerProps {
   source: ImageSourcePropType | undefined;
-  viewClassName?: string;
-  imageClassName?: string;
+  className?: string;
 }
 
-const Banner = ({ source, imageClassName, viewClassName }: BannerProps) => {
+const Banner = ({ source, className }: BannerProps) => {
   return (
     <>
-      <View className={viewClassName}>
-        <Image source={source} className={imageClassName} />
-      </View>
+      <Image source={source} className={className} resizeMode="contain" />
     </>
   );
 };
