@@ -10,7 +10,13 @@ const ProductItem = ({ product }: ProductItemProps) => {
   return (
     <>
       <Pressable onPress={() => {}}>
-        <View className="flex h-full w-[150px] flex-col gap-2">
+        <View className="relative flex h-full w-[150px] flex-col gap-2">
+          {product.discountPercentage > 0 && (
+            <DiscountBadge
+              discountPercentage={Number(product.discountPercentage)}
+            />
+          )}
+
           <View className="h-[150px] w-full">
             <Image
               source={{ uri: product.imageUrl }}
