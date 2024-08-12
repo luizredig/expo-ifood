@@ -92,10 +92,19 @@ export default function Index() {
         />
       </View>
 
-      <ProductSection
-        title="Pedidos recomendados"
-        products={recommendedProducts}
-      />
+      <View className="w-full pb-6">
+        <ProductSection
+          title="Pedidos recomendados"
+          products={recommendedProducts}
+        />
+      </View>
+
+      <View className="w-full rounded-xl px-5 pb-6">
+        <Banner
+          source={require("../assets/images/burguers-banner.png")}
+          className="h-48 w-full rounded-xl"
+        />
+      </View>
     </ScrollView>
   );
 }
